@@ -1,0 +1,139 @@
+$heading : 'Comfortaa', cursive;
+$subHeading : 'Poiret One', cursive;
+$bodyText : 'Open Sans', sans-serif;
+$minWidth : 370px;
+
+//colors
+$blk75 : #757575;
+$blk55 : #555555;
+$blk0 : #000000;
+$w : #ffffff;
+
+$appThemeColor : #f58522;
+$appAccent: #14bbcf; //rgb(20,187,207)
+
+body{
+  font-family: $bodyText;
+  overflow-x: hidden;
+
+  //section imports:
+  @import '../sections/header/Header';
+  @import '../sections/auth/Auth';
+  @import '../sections/get_started/GetStarted';
+  @import '../sections/tutorial/Tutorial';
+  @import '../sections/card/Card';
+
+  //componenets:
+  @import 'global';
+
+  //generic:
+
+  >section{
+    transition: 1s filter;
+    &.loading{
+      filter: blur(1.5px);
+    }
+  }
+
+  .btn-link{
+    position: absolute;
+    right: 0px;
+    background: none;
+    color: $blk75;
+    margin: 0px;
+    padding: 0px 5px;
+    text-transform: capitalize;
+    font-size: 1rem;
+    &:focus{
+      background: none;
+    }
+    &:hover{
+      background: none;
+    }
+    &.active{
+      color: $appAccent;
+    }
+  }
+  .btn{
+    background: $appAccent;
+    &:hover{
+      background: $appAccent;
+    }
+  }
+
+  .popup{
+    position: fixed;
+    top: 0px; bottom: 0px; left: 0px; right: 0px;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: -11;
+    opacity: 0;
+    transition: opacity 0.5s;
+    &.active{
+      opacity: 1;
+      z-index: 9999999999;
+    }
+    .content{
+      position: absolute;
+      top: 10px; bottom: 10px; left: 10px; right: 10px;
+      background: #ffffff;
+      padding: 10px;
+      border: 1px solid #f58522;
+      box-shadow: 0px 0px 2px $blk55;
+      .btn-link
+      {
+        top: 0px; right: 0px;
+      }
+    }
+  }
+
+  .hdivider{
+    height: 1px;
+    background: #cdcdcd;
+    margin: 10px;
+  }
+
+  .input-field{
+    /* label focus color */
+    input:focus + label {
+      color: $appAccent !important;
+    }
+    /* label underline focus color */
+    input:focus {
+      border-bottom: 1px solid $appAccent !important;
+    }
+    .inputLink{
+      position: absolute;
+      right: 10px;
+      top: 25px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      color: $appAccent;
+    }
+  }
+
+  [type="checkbox"]+label:before, [type="checkbox"]:not(.filled-in)+label:after{
+    border-color: $blk75;
+  }
+
+  [type="checkbox"]:checked+label:before{
+    border-right: 2px solid $appAccent !important;
+    border-bottom: 2px solid $appAccent !important;
+  }
+
+  .tabs{
+    .indicator{
+      background-color: $appAccent;
+    }
+    .tab{
+      a{
+        color: $blk75;
+        &:hover{
+          color: #7ae5f2;
+        }
+        &.active{
+          color: $appAccent;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.card-step.card-detail{
+  .content{
+  }
+  .view-control{
+    background: $appThemeColor;
+    color: $w;
+    font-size: 2rem;
+    padding: 10px;
+    height: auto;
+    .one{
+      left: 10px;
+      width: 60%;
+      color: $w;
+      font-size: 1.5rem;
+      text-align: left;
+    }
+    .three{
+      transform: perspective(1px) translateY(-50%);
+      top: 50%;
+      color: $w;
+      i{color: $w; font-size: 1.2rem;}
+    }
+  }
+}

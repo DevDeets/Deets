@@ -1,0 +1,59 @@
+<section id="{{_UID_}}" class="auth container row">
+
+    <ul class="tabs row">
+        <li class="tab col s6"><a href="#login">Login</a></li>
+        <li class="tab col s6"><a href="#register">Register</a></li>
+    </ul>
+
+    <form id="login" class="col s12">
+        <div class="input-field col s12 inline">
+            <input id="email" type="email" class="validate valid2" value="">
+            <label for="email" data-error="Email is invalid" data-success="">Email</label>
+        </div>
+        <div class="input-field col s12 inline">
+            <input id="pass" type="password" class="validate valid2" value="" required="true">
+            <label for="pass" data-error="Password is required" data-success="">Password</label>
+        </div>
+        <div class="input-field col s12 right-align hidden errorWrapper">
+            <p class="errorMsg">The email address and password you entered was not found. Please try again.</p>
+        </div>
+        <div class="col s12 margin-top20">
+            <input type="checkbox" id="rememberChk" checked="checked" />
+            <label for="rememberChk">Remember me on this device</label>
+        </div>
+        <div class="input-field col s12 right-align">
+            <a class="waves-effect waves-light btn col login-btn"><i class="i-login left hidden"></i>Login</a>
+            <a id="passwordForgotLink" class="waves-effect btn-flat btn-link">Forgot Password?</a>
+        </div>
+    </form>
+    <div id="register" class="col s12">
+        <div class="input-field col s12 inline">
+            <input id="regiEmail" type="email" class="validate" minlength="2" maxlength="100">
+            <label for="regiEmail" data-error="Email is invalid" data-success="">Email</label>
+        </div>
+        <div class="input-field col s12 inline">
+            <input id="regiPass" type="password" class="validate" minlength="4" maxlength="100">
+            <label for="regiPass" data-error="Password is invalid" data-success="">Password</label>
+            <a class="inputLink passToggle isHidden" data-show="Show Password" data-hide="Hide Password">Show Password</a>
+        </div>
+        <div class="input-field col s12 right-align hidden errorWrapper">
+            <p class="errorMsg">We are sorry but something is wrong with you input. Please try again.</p>
+        </div>
+        <div class="input-field col s12 right-align">
+            <a class="waves-effect waves-light btn col regi-btn"><i class="i-register left hidden"></i>Register</a>
+        </div>
+
+        <div class="hdivider col s12" style="margin-top: 15px"></div>
+
+        <p class="disclaimer">By signing up you agree to <a id="termsLink" href="#">Terms &amp; Conditions</a> and <a id="privacyLink" href="#">Privacy Policy</a> of Deetsit LLC.</p>
+    </div>
+
+    <section id="terms" class="popup">
+        <div class="content">
+            <a class="waves-effect btn-flat btn-link dismiss-btn">Dismiss</a>
+            <h4>Deetsit Terms & Conditions Or Privacy Policy</h4>
+            <p>Here are your terms and conditions.</p>
+        </div>
+    </section>
+
+</section>

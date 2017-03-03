@@ -1,0 +1,60 @@
+section.tutorial{
+  flex-direction: column;
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
+  position: absolute;
+  top: 60px; left: 0px; right: 0px; bottom: 0px;
+  .carousel{
+    height: 100% !important;
+  }
+  #stepWrapper{
+    text-align: right;
+    width: 100%;
+  }
+  .start-step{
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 0px; padding: 0px;
+
+    .btn{
+      padding: 0px 5px;
+      margin: 0px;
+    }
+
+    .actions-wrapper{
+      padding: 0px;
+      .left-align {
+        text-transform: capitalize;
+        float: left;
+        i{margin: 3px 5px 0px 0px;}
+      }
+      .right-align{
+        text-transform: capitalize;
+        float: right;
+        i{margin: 3px 5px 0px 0px;}
+      }
+    }
+
+    &#welcome{
+      img{
+        border-radius: 15px;
+        margin-bottom: 20px;
+      }
+
+    }
+    .content{
+      &.valign {
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        right: 0px;
+        transform: perspective(1px) translateY(-50%);
+      }
+      .actions-wrapper{
+        margin-top: 20px;
+      }
+    }
+  }
+}

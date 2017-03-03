@@ -1,0 +1,28 @@
+section.get-started{
+  padding: 60px 0px 10px 0px;
+  background: rgba(255, 255, 255, 0.75);
+  overflow-x: hidden;
+  margin-bottom: 0px;
+
+  #browseErrorLabel{
+    margin-top: 10px;
+  }
+
+  .img-preview-wrapper{
+    text-align: center;
+    margin-top: 10px;
+    .img-preview{
+      transform: perspective(1px) translateX(-50%);
+      left: 50%;
+      position: relative;
+      background-size:cover;
+      background-position: center;
+      width: 75px;
+      height: 100px;
+      border-radius: 3px;
+    }
+  }
+}
+
+
+

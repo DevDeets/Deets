@@ -1,0 +1,70 @@
+<section id="{{_UID_}}" class="row get-started animated zoomIn">
+
+    <h3>Let's Get Started!</h3>
+    <h4>To set up your first Deets card, enter the contact information you want to share when someone takes a picture of your lock screen.</h4>
+    <div class="input-field col s12 inline">
+        <input id="cardName" placeholder="Business, Conference, Friends, Dating, etc." type="text" class="validate">
+        <label for="cardName" data-error="Card name is required" data-success="">Card Name</label>
+    </div>
+    <div class="input-field col s12 inline">
+        <input id="name" placeholder="First & Last" type="text" class="validate">
+        <label for="name" data-error="First & Last Name is required" data-success="">Your Name</label>
+    </div>
+    <div class="input-field col s12 inline">
+        <input id="email" type="email" class="validate">
+        <label for="email" data-error="Email is invalid" data-success="">Email</label>
+    </div>
+    <div class="input-field col s12 inline">
+        <input id="phone" type="text" class="validate">
+        <label for="phone" data-error="Phone is required" data-success="">Phone</label>
+    </div>
+    <div class="file-field input-field col s12 inline">
+        <div class="btn col s12">
+            <span>Card Image</span>
+            <input id="file_input_file" type="file">
+        </div>
+
+        <div class="file-path-wrapper hidden">
+            <input class="file-path validate" type="text" placeholder="Choose and upload the picture you plan to use for your phone's lock screen.">
+        </div>
+    </div>
+
+    <div class="col s12 img-preview-wrapper hidden">
+        <div class="img-preview"></div>
+    </div>
+
+    <label id="browseErrorLabel" class="errorMsg col s12 hidden">Card Image is required</label>
+
+    <div class="input-field col s12">
+        <h6>Optional Fields:</h6>
+    </div>
+
+    <div class="input-field col s12 inline">
+        <input id="company" type="text" class="validate">
+        <label for="company" data-error="" data-success="">Company Name</label>
+    </div>
+    <div class="input-field col s12 inline">
+        <input id="jobTitle" type="text" class="validate">
+        <label for="jobTitle" data-error="" data-success="">Job Title</label>
+    </div>
+    <div class="input-field col s12 inline">
+        <input id="streetAddress" type="text" class="validate">
+        <label for="streetAddress" data-error="" data-success="">Work Street Address</label>
+    </div>
+    <div class="input-field col s12 inline">
+        <input id="city" type="text" class="validate">
+        <label for="city" data-error="" data-success="">Work City</label>
+    </div>
+    <div class="input-field col s6 inline">
+        <input id="state" type="text" class="validate">
+        <label for="state" data-error="" data-success="">Work State</label>
+    </div>
+    <div class="input-field col s6 inline">
+        <input id="zip" type="text" class="validate">
+        <label for="zip" data-error="" data-success="">Work Zip Code</label>
+    </div>
+    <div class="col s12 right-align actions-wrapper">
+        <a class="waves-effect waves-light btn col create-btn">Create Card</a>
+    </div>
+
+</section>

@@ -1,0 +1,32 @@
+{
+  "devDependencies": {
+    "babel-loader": "^6.1.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-polyfill": "^6.3.14",
+    "babel-core" : "*",
+
+    "css-loader" : "*",
+    "node-sass" : "*",
+    "sass-loader" : "*",
+    "style-loader" : "*",
+    "file-loader" : "*",
+    "json-loader" : "*",
+    "html-loader" : "*",
+    "url-loader" : "*",
+
+    "webpack": "^1.12.6",
+    "webpack-dev-server": "^1.12.1",
+    "copy-webpack-plugin": "^0.2.0",
+    "html-webpack-plugin": "*"
+  },
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "start": "webpack-dev-server --hot --inline"
+  },
+  "babel": {
+    "presets": ["es2015"]
+  },
+  "author": "Lamiglo",
+  "license": "MIT"
+}

@@ -1,0 +1,41 @@
+#cardEdit{
+  .content{
+    .btns-wrapper{
+      padding: 0px;
+      margin: 0px;
+      .btn-wrapper{
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+        .btn-link{
+          position: relative;
+          width: 100%;
+          &.active{
+            border-bottom: 2px solid $appAccent;
+          }
+        }
+      }
+    }
+
+    .sub-content{
+      margin: 15px 0px 0px 0px;
+      padding: 0px;
+
+      .input-field{
+        .switch{
+          position: absolute;
+          width: 75px;
+          right: -0px;
+          top: 5px;
+          label input[type=checkbox]:checked+.lever{
+            background-color: #cdcdcd;
+            &:after{
+              background: $appAccent;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

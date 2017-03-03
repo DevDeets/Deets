@@ -1,0 +1,38 @@
+header.header{
+  box-shadow: 0px 1px 2px $blk55;
+  z-index: 999;
+  .header-comp{
+    position: absolute;
+    top: 0px;left: 0px;right: 0px; bottom: 0px;
+    a{
+      color: $blk75;
+      font-size: 0.8rem;
+      position: absolute;
+      padding: 5px;
+      margin: -5px 0px 0px 0px;
+      border-radius: 10px;
+      &:focus{background: rgba(0, 0, 0, 0);}
+      &:hover{background: rgba(0, 0, 0, 0);}
+      &.waves-effect.waves-theme .waves-ripple{
+        background-color: rgba(20,187,207, 0.5);
+      }
+    }
+    .one{
+      left: 10px;
+      top: 50%;
+      transform: perspective(1px) translateY(-50%);
+    }
+    .two{
+
+    }
+    &.header-card-details{
+      a{
+        .i-skip{
+          &:before{
+
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+section.auth{
+  flex-direction: column;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position: absolute;
+  top: 50px; left: 0px; right: 0px; bottom: 0px;
+  .carousel{
+    height: 320px !important;
+  }
+
+  #login{
+    .btn-link{
+      position: absolute;
+      right: 0px;
+      background: none;
+      color: $appAccent;
+      margin: 0px;
+      padding: 0px 5px;
+      text-transform: capitalize;
+      font-size: 1rem;
+    }
+    .login-btn{
+      i{
+        font-size: 2rem;
+        margin: 4px 4px 0px 0px;
+      }
+    }
+
+  }
+
+  #register{
+    .disclaimer{
+      text-align: center;
+      color: $blk75;
+      font-size: 0.7rem;
+      line-height: 1rem;
+      a{color: $appAccent}
+    }
+
+    .regi-btn{
+      i{
+        font-size: 1.5rem;
+        margin: 3px 3px 0px 0px;
+      }
+    }
+  }
+}
+

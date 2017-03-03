@@ -1,0 +1,143 @@
+.loader-component,
+.loader-component:before,
+.loader-component:after {
+  background: #ffffff;
+  -webkit-animation: loadA 1s infinite ease-in-out;
+  animation: loadA 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em;
+}
+.loader-component {
+  color: #ffffff;
+  text-indent: -9999em;
+  margin: 20px 30px;
+  font-size: 11px;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+  position: absolute;
+  bottom: 0px; right: 0px;
+}
+.loader-component:before,
+.loader-component:after {
+  position: absolute;
+  top: 0;
+  content: '';
+}
+.loader-component:before {
+  left: -1.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader-component:after {
+  left: 1.5em;
+}
+@-webkit-keyframes loadA {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+@keyframes loadA {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+
+.container .row{
+  overflow-x: hidden;
+}
+
+.hidden{
+  display: none !important;
+}
+.api-loader{
+  opacity: 0;
+  transition: opacity 0.5s;
+  position: fixed;
+  top: 0px; bottom: 0px; right: 0px; left: 0px;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: -1;
+  &.active{
+    opacity: 1;
+    z-index: 9999999999;
+  }
+  .loader{
+    position: absolute;
+    top: 50%;
+    transform: perspective(1px) translate(-50%,-50%);
+    left: 50%;
+    right: auto; bottom: auto;
+    margin: 0px;
+  }
+}
+
+h3{
+  text-align: center;
+  font-size: 2rem;
+  color: $appThemeColor;
+  margin: 0px;
+  padding: 5px 0px;
+}
+h4{
+  text-align: center;
+  font-size: 1.5rem;
+  color: $blk55;
+  margin: 0px;
+  padding: 5px 0px;
+}
+h5{
+  text-align: center;
+  font-size: 1rem;
+  color: $blk75;
+  font-style: italic;
+  margin: 0px;
+  padding: 5px 0px;
+}
+h6{
+  text-align: center;
+  font-size: 1rem;
+  color: $blk75;
+  margin: 0px;
+  padding: 5px 0px;
+}
+p{
+  text-align: center;
+  font-size: 0.9rem;
+  color: $blk55;
+  margin: 0px;
+  padding: 5px 0px;
+}
+.errorMsg{
+  color: #ff0000;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+input:not([type]).invalid+label:after, input:not([type]):focus.invalid+label:after, input[type=text].invalid+label:after, input[type=text]:focus.invalid+label:after, input[type=password].invalid+label:after, input[type=password]:focus.invalid+label:after, input[type=email].invalid+label:after, input[type=email]:focus.invalid+label:after, input[type=url].invalid+label:after, input[type=url]:focus.invalid+label:after, input[type=time].invalid+label:after, input[type=time]:focus.invalid+label:after, input[type=date].invalid+label:after, input[type=date]:focus.invalid+label:after, input[type=datetime].invalid+label:after, input[type=datetime]:focus.invalid+label:after, input[type=datetime-local].invalid+label:after, input[type=datetime-local]:focus.invalid+label:after, input[type=tel].invalid+label:after, input[type=tel]:focus.invalid+label:after, input[type=number].invalid+label:after, input[type=number]:focus.invalid+label:after, input[type=search].invalid+label:after, input[type=search]:focus.invalid+label:after, textarea.materialize-textarea.invalid+label:after, textarea.materialize-textarea:focus.invalid+label:after{
+    right: 20px;
+}
+
+.margin-top15{
+  margin-top: 15px;
+}
+
+.margin-top20{
+  margin-top: 20px;
+}
+

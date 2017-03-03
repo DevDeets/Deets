@@ -1,0 +1,56 @@
+.card-view{
+  .view-control{
+    position: fixed !important;
+  }
+  .content{
+    padding-bottom: 40px;
+    .card-item{
+      margin: 0px;
+      padding: 0px;
+      position: relative;
+      background: #cdcdcd;
+      &:last-child{
+        margin-bottom: 40px;
+      }
+      &.isLoading{
+        .loader-component{
+          display: block;
+        }
+      }
+
+      .card-img-div{
+        position: relative;
+        background-size:cover;
+        background-position: center;
+        //width: 100%;
+        height: 200px;
+        border-radius: 3px;
+      }
+
+      .loader-component{
+        top: 45%;
+        transform: perspective(1px) translate(-50%,-50%);
+        left: 50%;
+        right: auto; bottom: auto;
+        margin: 0px;
+        position: absolute;
+        font-size: 5px;
+        display: none;
+      }
+
+      h4{
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        margin: 0px;
+        padding: 10px 5px;
+        background: rgba(0, 0, 0, 0.3);
+        text-align: center;
+        color: $w;
+      }
+    }
+  }
+}
+
+

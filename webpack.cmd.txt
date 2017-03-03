@@ -1,0 +1,17 @@
+SETUP COMMENDS:
+npm install
+
+Build once:
+npm
+Open build/index.html
+Watch files continuously, rebuild incrementally, whenever one of them changes:
+npm run watch
+Open build/index.html, manually reload page in browser whenever there was a change
+Hot reloading via webpack dev server:
+npm start
+Go to http://localhost:8080/, page reloads automatically when there are changes
+
+NPM Commends if needed:
+npm list --depth=0 /// - to see current version
+npm outdated - to check what is out of date
+npm update  // to update packages

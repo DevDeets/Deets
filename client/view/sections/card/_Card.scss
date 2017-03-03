@@ -1,0 +1,79 @@
+section.card-section{
+  flex-direction: column;
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
+  position: absolute;
+  top: 50px; left: 0px; right: 0px; bottom: 0px;
+  padding: 0px;
+  background: #ffffff;
+  margin: 0px;
+  padding: 0px;
+  .carousel{
+    height: 100% !important;
+  }
+
+  .tabs{
+    height: 5px;
+    bottom: -10px;
+  }
+
+  @import "view/View";
+  @import "detail/Detail";
+  @import "edit/Edit";
+
+  .card-step{
+    top: 0px;right: 0px; left: 0px; bottom: 0px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 0px; padding: 0px;
+    position: absolute;
+
+    .card-img-div{
+      position: relative;
+      background-size:cover;
+      background-position: center;
+      height: 200px;
+      border-radius: 3px;
+      overflow: hidden;
+    }
+
+    .view-control{
+      position: absolute;
+      bottom: 0px;
+      left: 0px; right: 0px;
+      height: 40px;
+      background: rgba(255, 255, 255, 0.75);
+      box-shadow: 0px 0px 3px $blk0;
+      .one{left: 10px;}
+      .two{transform: perspective(1px) translateX(-50%);left: 50%;}
+      .three{right: 10px;}
+      a{
+        color: $blk75;
+        font-size: 0.8rem;
+        position: absolute;
+        padding: 7px 7px 2px 7px;
+        text-align: center;
+        margin: 0px;
+        border-radius: 10px;
+        top: 3px;
+        &:focus{background: rgba(0, 0, 0, 0);}
+        &:hover{background: rgba(0, 0, 0, 0);}
+        &.waves-effect.waves-theme .waves-ripple{
+          background-color: rgba(20,187,207, 0.5);
+        }
+
+        i{
+          position: absolute;
+          font-size: 1rem;
+          color: $blk75;
+          top: -7px;
+          left: 50%;
+          transform: perspective(1px) translateX(-50%);
+        }
+      }
+    }
+
+  }
+}
+

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- META SECTIONS -->
+    <meta charset="utf-8">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>Deetsit</title>
+    <meta name="description" content="tbd">
+    <meta name="keywords" content="tbd">
+    <meta name="author" content="Lamiglo.com">
+
+    <style id="tempScript">
+        .header{
+            flex-direction: column;
+            background: #ffffff;
+            position: fixed;
+            top: 0px; left: 0px; right: 0px;
+            height: 100%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            transition: height 2s;
+        }
+        .header.ready{
+            height: 50px;
+        }
+        .headerWelcomeTxt{color: #f58522;}
+        .loader,
+        .loader:before,
+        .loader:after {
+            background: #ffffff;
+            -webkit-animation: load1 1s infinite ease-in-out;
+            animation: load1 1s infinite ease-in-out;
+            width: 1em;
+            height: 4em;
+        }
+        .loader {
+            color: #ffffff;
+            text-indent: -9999em;
+            margin: 20px 30px;
+            font-size: 11px;
+            -webkit-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-animation-delay: -0.16s;
+            animation-delay: -0.16s;
+            position: absolute;
+            bottom: 0px; right: 0px;
+        }
+        .loader:before,
+        .loader:after {
+            position: absolute;
+            top: 0;
+            content: '';
+        }
+        .loader:before {
+            left: -1.5em;
+            -webkit-animation-delay: -0.32s;
+            animation-delay: -0.32s;
+        }
+        .loader:after {
+            left: 1.5em;
+        }
+        @-webkit-keyframes load1 {
+            0%,
+            80%,
+            100% {
+                box-shadow: 0 0;
+                height: 4em;
+            }
+            40% {
+                box-shadow: 0 -2em;
+                height: 5em;
+            }
+        }
+        @keyframes load1 {
+            0%,
+            80%,
+            100% {
+                box-shadow: 0 0;
+                height: 4em;
+            }
+            40% {
+                box-shadow: 0 -2em;
+                height: 5em;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="sizer">
+        <i class="hide-on-small-only"></i>
+        <i class="hide-on-med-only"></i>
+        <i class="hide-on-large-only"></i>
+    </div>
+    <div class="api-loader"><div class="loader">Loading...</div></div>
+    <header class="header">
+        <h2 class="headerWelcomeTxt">Welcome</h2>
+        <img src="logo.png" style="max-width: 80%; max-height: 80%;">
+        <div class="loader">Loading...</div>
+    </header>
+
+    <img src="/images/loading.jpg" style="display: none;">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/reset.min.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+
+    <!-- FONTS -->
+    <link rel="stylesheet" type="text/css" href="fonts/fontastic/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Open+Sans|Poiret+One" rel="stylesheet">
+
+    <!-- JS -->
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <script type="text/javascript" src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
+
+</body>
+</html>
