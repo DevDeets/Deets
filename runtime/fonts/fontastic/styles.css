@@ -37,6 +37,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 .i-login:before {
   content: "\61";
 }
@@ -75,4 +76,7 @@
 }
 .i-tiles:before {
   content: "\6e";
+}
+.i-back:before {
+  content: "\6b";
 }

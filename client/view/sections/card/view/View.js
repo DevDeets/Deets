@@ -21,6 +21,21 @@ class CardsView extends UIComponent{
 
     addEventListeners(){
         Event.addTap(this.selector + " .card-item:not(.isLoading)", e => this.onCardTap(e));
+        Event.addTap(this.selector + " .view-control .three", e => this.onAdd(e));
+        Event.addGlobalEventListener(Global.enum.EVENTS.SECTION_ACTION, (e) => this.handleSectionAction(e));
+    };
+
+    handleSectionAction(event){
+        let eventData = event.eventData;
+        let action = eventData.action;
+        switch(action){
+            case Global.enum.ACTIONS.CARD_NEW_BACK:
+            case Global.enum.ACTIONS.CARD_DETAIL_BACK: this.cardsBackHandler(); break
+        };
+    };
+
+    cardsBackHandler(){
+        this.show();
     };
 
     onCardsDataChange(data){
@@ -86,6 +101,11 @@ class CardsView extends UIComponent{
         let cardObj = this.cardsObj[cardId];
         this.hide();
         this.disaptchEvent(Global.enum.EVENTS.SECTION_ACTION, {"action" : Global.enum.ACTIONS.CARD_TAPPED, "cardData" : cardObj});
+    };
+
+    onAdd(e){
+        this.hide();
+        this.disaptchEvent(Global.enum.EVENTS.SECTION_ACTION, {"action" : Global.enum.ACTIONS.CARD_ADD});
     };
 }
 

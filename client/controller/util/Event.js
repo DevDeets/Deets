@@ -12,6 +12,13 @@ class Event {
         $(document).on("change", selector, cb);
     };
 
+    static addSwipe(selector, cb){
+        $(document).on("swipeleft", selector, function(e){
+            console.log("SWIPEeeee");
+            console.log(e);
+        });
+    }
+
     static bindEventListener(selector, type, cb, isJQ){
         let $jobj = isJQ ? selector : $(selector);
         $jobj.bind(type, cb);

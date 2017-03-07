@@ -1,12 +1,21 @@
 .card-step.card-detail{
+  z-index: 999;
   .content{
+    padding: 10px;
   }
+
+  .collection{
+    margin: 10px;
+  }
+
   .view-control{
     background: $appThemeColor;
     color: $w;
     font-size: 2rem;
     padding: 10px;
     height: auto;
+    position: relative;
+    margin-bottom: 10px;
     .one{
       left: 10px;
       width: 60%;

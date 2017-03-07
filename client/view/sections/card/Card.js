@@ -12,21 +12,12 @@ class Card extends UIComponent {
     constructor() {
         super("body", HTML);
         this.createChildren();
-        this.addEventListeners();
     };
 
     createChildren(){
         this.cardsView = new CardsView(this.selector);
         this.cardDetail = new CardDetail(this.selector);
         this.cardEdit = new CardEdit(this.selector);
-    }
-
-    addEventListeners(){
-        Event.addTap(this.selector + " .card-item", e => this.onCardTap(e));
-    };
-
-    onCardTap(e){
-        $('ul.tabs', this.selector).tabs('select_tab', 'cardDetail');
     }
 }
 

@@ -79,7 +79,13 @@ class Util {
             $loader.removeClass("active").addClass("hidden");
             $directSections.removeClass("loading");
         }
+    }
 
+    static getFirstPropName(obj){
+        for(let propName in obj){
+            return propName;
+        }
+        return null;
     }
 }
 

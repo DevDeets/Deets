@@ -43,8 +43,11 @@ class UIComponent {
         }, 500);
     }
 
-    show(){
-        $(this.selector).removeClass("hidden");
+    show(showCls){
+        let $this = $(this.selector).removeClass("fadeOut fadeIn " + showCls);
+        let cls = (showCls) ? showCls : "fadeIn";
+        $this.removeClass("hidden").addClass(cls);
+
         if(this.update)
             this.update();
     }

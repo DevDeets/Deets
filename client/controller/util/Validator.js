@@ -1,6 +1,6 @@
 class Validator {
-    static temp(){
-        return "";
+    static stringHasValue(str){
+        return (str != null && str.length > 0);
     };
 }
 

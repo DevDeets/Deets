@@ -15,6 +15,7 @@ $appAccent: #14bbcf; //rgb(20,187,207)
 body{
   font-family: $bodyText;
   overflow-x: hidden;
+  background: $w;
 
   //section imports:
   @import '../sections/header/Header';

@@ -81,7 +81,6 @@ class Auth extends UIComponent {
 
     onLoginDone(userData){
         if(userData && userData.uid){
-            console.log("all good with login.");
             this.disaptchEvent(Global.enum.EVENTS.SECTION_ACTION, {"action" : Global.enum.ACTIONS.LOGGED_IN});
         }
         else{
